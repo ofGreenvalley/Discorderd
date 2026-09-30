@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xatspace אֲבַדוֹן</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pantalla de Entrada con Falla Multiversal Global -->
+    <div class="landing-screen" id="landingScreen">
+        <div class="landing-bg"></div>
+        <button class="press-btn" onclick="enterSpace()">Press</button>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="main-space" id="mainSpace">
+        
+        <div class="content-section">
+            <h1 class="title-hebrew">אֲבַדוֹן</h1>
+            
+            <div class="runes-container">
+                ᚠᚢᚦᚨᚱᚲᚷᚹ
+            </div>
+
+            <div class="menu-wrapper">
+                <button class="trigger-btn" onclick="toggleMenu()" id="menuTrigger">+</button>
+                
+                <div class="menu-options" id="menuOptions">
+                    <button class="opt-btn" onclick="showSub('aboutMe')">About Me</button>
+                    <button class="opt-btn" onclick="showSub('friends')">Friends</button>
+                    <button class="opt-btn" onclick="resetSpace()">Come Back</button>
+                </div>
+
+                <div id="aboutMe" class="sub-content">
+                    <p class="phrase-doom">“El invierno me obedece, pues soy Doom.”</p>
+                </div>
+
+                <div id="friends" class="sub-content">
+                    <ul class="friends-list">
+                        <li><a href="https://xat.me/iLuguinhoo" target="_blank">Lugo</a></li>
+                        <li><a href="https://xat.me/Honeymoon" target="_blank">MAR</a></li>
+                        <li><a href="https://xat.me/Estela" target="_blank">Estela</a></li>
+                        <li><a href="https://xat.me/Nyxess" target="_blank">Gabi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-section"></div>
+
+    </div>
+
+    <!-- Reproductor de Audio -->
+    <div class="audio-player-box">
+        <button class="play-pause-btn" id="playBtn" onclick="toggleAudio()">⏸</button>
+        <div class="track-info">
+            <span>Se Lo Juro Mor - Feid (Letra).mp3</span>
+            Reproduciendo automáticamente
+        </div>
+        <audio id="bgAudio" loop>
+            <source src="Se Lo Juro Mor - Feid (Letra).mp3" type="audio/mp3">
+            Tu navegador no soporta este elemento de audio.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
